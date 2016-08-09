@@ -6,10 +6,13 @@ import { Keg } from './keg.model';
   inputs: ['keg'],
   template: `
     <h3> {{ keg.name }} - {{ keg.brand }} - $\{{ keg.price }} - {{ keg.alcoholContent}}% - Pints Remaining: {{ keg.pintsRemaining }}</h3>
-    <button class="btn btn-outline-primary">Reduce by one pint</button>
+    <button (click)="buttonClicked(keg)" class="btn btn-outline-primary">Reduce by one pint</button>
     <hr>
   `
 })
 export class KegComponent {
   public keg: Keg;
+  buttonClicked(clickedKeg: Keg): void {
+    clickedKeg.pintsRemaining -= 1;
+  }
 }
