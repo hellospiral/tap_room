@@ -1,0 +1,20 @@
+{
+  "name": "tap_room_angular2",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Matt Carlson"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
